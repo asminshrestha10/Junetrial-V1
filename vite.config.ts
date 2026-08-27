@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 // must match your repository name exactly. Update REPO_NAME below once
 // you've created the GitHub repo (e.g. "junetrail" if your repo URL is
 // github.com/yourname/junetrail).
-const REPO_NAME = 'junetrail'
+const REPO_NAME = 'Junetrail-V1'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
