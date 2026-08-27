@@ -1,0 +1,26 @@
+<!doctype html>
+<!--
+  GitHub Pages has no server-side router, so a direct visit to e.g.
+  /articles/my-post gets served this 404 page. This script rewrites the
+  URL into a query string and redirects to index.html, which unpacks it
+  back into a normal route. This is the standard spa-github-pages trick.
+  See: https://github.com/rafgraph/spa-github-pages
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JuneTrail</title>
+    <script>
+      var segmentCount = 1 // matches the 1 path segment in vite base, e.g. /junetrail/
+      var l = window.location
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      )
+    </script>
+  </head>
+  <body></body>
+</html>

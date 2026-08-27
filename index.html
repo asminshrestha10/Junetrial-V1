@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10151a" />
+    <title>JuneTrail — 4x4 Knowledge, Engineering Insight, Real-World Gear</title>
+    <meta
+      name="description"
+      content="Independent 4x4 reviews, engineering analysis, buying guides and off-road knowledge for Australian enthusiasts."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JuneTrail — 4x4 Knowledge, Engineering Insight, Real-World Gear" />
+    <meta
+      property="og:description"
+      content="Independent 4x4 reviews, engineering analysis, buying guides and off-road knowledge for Australian enthusiasts."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/logo.svg" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JuneTrail" />
+    <meta
+      name="twitter:description"
+      content="Independent 4x4 reviews, engineering analysis, buying guides and off-road knowledge for Australian enthusiasts."
+    />
+
+    <!-- Organisation structured data — update sameAs with real social URLs once created -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JuneTrail",
+        "description": "Independent Australian 4x4 engineering analysis, product reviews and buying guides.",
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Restores the real URL after the 404.html redirect trick (see public/404.html) -->
+    <script>
+      (function (l) {
+        if (l.search[1] === 'p' && l.search[2] === '=') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          )
+        }
+      })(window.location)
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

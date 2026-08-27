@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Placeholder sitemap. This site is a client-rendered SPA, so this file
+  is not auto-generated — update it by hand as you add real articles,
+  products, and vehicle pages, or wire up a small build script later.
+  Replace YOUR-USERNAME with your GitHub username/org.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/articles</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/vehicles</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/reviews</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/engineering</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/buying-guides</loc></url>
+  <url><loc>https://YOUR-USERNAME.github.io/junetrail/about</loc></url>
+</urlset>
